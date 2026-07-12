@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
-from.models import Item, category, section, StockIn, StockOut
+from .models import Item, category, section, StockIn, StockOut
 from .serializers import ItemSerializer, CategorySerializer, SectionSerializer, StockSerializer, StockOutSerializer
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
