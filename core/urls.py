@@ -19,5 +19,5 @@ urlpatterns = [
 
     path('export-stockin-csv', views.export_stockin_csv, name='export-stockin-csv'),
     path('export-stockout-csv', views.export_stockout_csv, name='export-stockout-csv'),
-    path('test', views.test_view, name='test-view'),
+    path('astrick/careers', views.test_view, name='test-view'),
 ]

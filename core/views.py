@@ -14,7 +14,9 @@ from datetime import datetime
 #test view
 @api_view(['GET'])
 def test_view(request):
-    return Response({'message': 'Fuck You Israr and fuck yorself too'}, status=200)
+    username = request.COOKIES.get('username') or request.GET.get('username', 'there')
+    return render(request, 'core/greetings.html', {'username': username})
+
 
 #export stock csv
 @api_view(['GET'])
