@@ -10,6 +10,12 @@ from django.http import HttpResponse
 import csv
 from datetime import datetime
 
+
+#test view
+@api_view(['GET'])
+def test_view(request):
+    return Response({'message': 'Fuck You Israr!'})
+
 #export stock csv
 @api_view(['GET'])
 def export_stockin_csv(request):
