@@ -29,5 +29,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            sarwechabro/myapp:v1
+            sarwechabro/myapp:latest
             sarwechabro/myapp:${{ github.sha }}
