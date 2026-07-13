@@ -14,7 +14,7 @@ from datetime import datetime
 #test view
 @api_view(['GET'])
 def test_view(request):
-    return Response({'message': 'Fuck You Israr!'})
+    return Response({'message': 'Fuck You Israr and fuck yorself too'}, status=200)
 
 #export stock csv
 @api_view(['GET'])
